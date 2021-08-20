@@ -1,0 +1,156 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Shampoo Tradicional I Love Pet 5 Litros",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Saúde",
+      "thumbnail": "https://a-static.mlcdn.com.br/1500x1500/shampoo-tradicional-i-love-pet-5-litros/royalpets/11126/a14ea4e5fcd9fb0214b8d14e5c9ebd19.jpg",
+      "price": 69.90,
+      "onSale": true,
+      "oldPrice": 99.9,
+      "sellerSuggestion": true
+    },
+    {
+      "id": "2",
+      "title": "Cama Londres Azul - Chicxs",
+      "description": [
+        "Cuidados com a Cama para Cachorro Londres Bichinho Chic Azul",
+        "Mantenha a caminha do seu pet sempre limpa e higienizada",
+        "Escolha o tamanho da caminha de acordo com o porte do seu cachorro ou gato",
+        "Escolha um cantinho bem aconchegante na casa para colocar a caminha, assim seu pet sempre se sentirá seguro e acolhido"
+      ],
+      "category": "Camas e Casinhas",
+      "thumbnail": "https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/c/a/cama-londres-azul.jpg",
+      "price": 266.31,
+      "sellerSuggestion": true
+    },
+    {
+      "id": "3",
+      "title": "Comedouro Pesado Lilás NF Pet",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Ossos e Petiscos",
+      "thumbnail": "https://www.petlove.com.br/images/products/199820/large/Comedouro_NF_Pet_Pesado_Lil%C3%A1s_-_Tam._Filhote_1954073_1.jpg?1627641796",
+      "price": 25.9,
+      "onSale": true,
+      "oldPrice": 27.5,
+      "sellerSuggestion": true
+    },
+    {
+      "id": "4",
+      "title": "Shampoo Dr. Dog 10 Litros",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Saúde",
+      "thumbnail": "https://www.petlove.com.br/images/products/190460/large/Shampoo-Dr.-Dog-Neutro-para-Filhotes-Perfumaria-Fina-5-litros.jpg?1627614248",
+      "price": 15.90,
+      "sellerSuggestion": true
+    },
+    {
+      "id": "5",
+      "title": "Mordedor de Pelúcia Kelev Preto",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Brinquedos",
+      "thumbnail": "https://www.petcaesecia.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/r/brinquedo_jambo_mordedor_pel_cia_macaco_kelev_preto_1786685.jpg",
+      "price": 15.90,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "6",
+      "title": "Bola Moderna com Espinhos",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Brinquedos",
+      "thumbnail": "https://www.petlove.com.br/images/products/211039/large/Brinquedo_Chalesco_Bola_Colorida_com_Espinhos_31018604_2.jpg?1627676939",
+      "price": 27.99,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "7",
+      "title": "Brinquedo Chalesco para Cães com Bola de Tênis - Cores Sortidas",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Brinquedos",
+      "thumbnail": "https://staticpetz.stoom.com.br/fotos/1606163316924.jpg",
+      "price": 36.99,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "8",
+      "title": "Brinquedo Chalesco Sapo",
+      "description": [
+        "Indicado para cães e gatos",
+        "Contém extrato de aloe e vera e silicone",
+        "PH neutro",
+        "Uso veterinário",
+        "Produto de alta qualidade",
+        "Disponível emembalagens de 500ml e 5 litros"
+      ],
+      "category": "Brinquedos",
+      "thumbnail": "https://staticpetz.stoom.com.br/fotos/1600098095661.jpg",
+      "price": 15.90,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "9",
+      "title": "Coleira Búfalo com Detalhes de Cachorro",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "Coleiras",
+      "thumbnail": "https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/0/0/0060a.jpg",
+      "price": 18.90,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "10",
+      "title": "Coleira Bandana Amarela",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "Coleiras",
+      "thumbnail": "https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/c/o/coleira-estampada-dog-bandana-amarela.jpg",
+      "price": 14.90,
+      "sellerSuggestion": false
+    }
+  ]
+}
