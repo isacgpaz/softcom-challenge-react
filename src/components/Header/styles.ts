@@ -18,7 +18,7 @@ export const Thumbnail = styled.div`
   display: flex;
   align-items: center;
 
-  border: 2px solid var(--purple);
+  border: 3px solid var(--purple);
   border-radius: 50%;
 
   img{
@@ -38,6 +38,10 @@ export const Status = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  h2{
+    color: var(--title);
+  }
 
   span{
     display: flex;
@@ -76,10 +80,12 @@ export const DeliveryInfo = styled.div`
 `
 
 export const Navigation = styled.div`
-  padding: .725rem;
+  padding: .725rem .725rem 0;
   
   display: flex;
   flex-direction: column;
+
+  border-bottom: 1px solid var(--gray);
 `
 
 export const Navbar = styled.nav`

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "json-server ./src/data/server.json -w -p 3333"
   },
   "dependencies": {
     "axios": "^0.21.1",

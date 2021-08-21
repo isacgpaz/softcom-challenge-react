@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   
   width: 100%;
-  border: 1px solid var(--gray);
+  border: 2px solid var(--gray);
   border-radius: 4px;
 
   color: var(--text-secondary);
@@ -15,6 +15,10 @@ export const Container = styled.div`
   
   &:focus-within{
     border: 2px solid var(--purple);
+    
+    span{
+      font-size: 1.35rem;
+    }
   }
 
   input{
@@ -33,7 +37,9 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
-    padding: .25rem .5rem;
+    padding: .25rem .65rem;
     font-size: 1.15rem;
+
+    transition: all .2s ease;
   }
 `

@@ -1,7 +1,18 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
-import { Header } from '../components/Header'
+import { Catalog } from '../components/Catalog'
+import { IHome } from '../interfaces/IHome'
+import { IProduct } from '../interfaces/IProduct'
+import { api } from '../services/api'
 
-export default function Home() {
+export default function Home({ 
+  sellerSuggestion, 
+  toys, 
+  bedsAndHouses, 
+  collars, 
+  bonesAndSnacks, 
+  health 
+  }: IHome) {
   return (
     <div>
       <Head>
@@ -10,7 +21,51 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
+      <div>
+        <Catalog sectionTitle="Sugestão do Vendedor" products={sellerSuggestion}/>
+        <Catalog sectionTitle="Brinquedos" products={toys}/>
+        <Catalog sectionTitle="Camas e Casinhas" products={bedsAndHouses}/>
+        <Catalog sectionTitle="Coleiras" products={collars}/>
+        <Catalog sectionTitle="Ossos e Petiscos" products={bonesAndSnacks}/>
+        <Catalog sectionTitle="Saúde" products={health}/>
+      </div>
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await api.get('products')
+
+  const products: Array<IProduct> = data.map((product: IProduct) => {
+    return {
+      id: product.id,
+      title: product.title,
+      description: product.description,
+      category: product.category,
+      thumbnail: product.thumbnail,
+      price: String(product.price.toFixed(2)).replace('.', ','),
+      onSale: product.onSale || false,
+      oldPrice: String(product?.oldPrice?.toFixed(2)).replace('.', ',') || String(product.price.toFixed(2)).replace('.', ','),
+      sellerSuggestion: product.sellerSuggestion
+    }
+  })
+
+  const sellerSuggestion = products.filter((product: IProduct) => { return product.sellerSuggestion });
+  const toys = products.filter((product: IProduct) => { return product.category == "Brinquedos" });
+  const bedsAndHouses = products.filter((product: IProduct) => { return product.category == "Camas e Casinhas" });
+  const collars = products.filter((product: IProduct) => { return product.category == "Coleiras" });
+  const bonesAndSnacks = products.filter((product: IProduct) => { return product.category == "Ossos e Petiscos" });
+  const health = products.filter((product: IProduct) => { return product.category == "Saúde" });
+
+  return {
+    props: {
+      sellerSuggestion,
+      toys,
+      bedsAndHouses,
+      collars,
+      bonesAndSnacks,
+      health
+    },
+    revalidate: 60 * 60 * 8 //24h
+  }
 }

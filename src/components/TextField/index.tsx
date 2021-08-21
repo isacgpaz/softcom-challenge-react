@@ -1,7 +1,7 @@
-import { TextFieldProps } from "../../interfaces/TextField"
+import { ITextField } from "../../interfaces/ITextField"
 import { Container } from "./styles"
 
-export function TextField(props: TextFieldProps){
+export function TextField(props: ITextField){
   return (
     <Container>
       <input 
