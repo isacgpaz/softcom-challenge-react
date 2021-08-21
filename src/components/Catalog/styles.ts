@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 1rem .725rem;
+  padding: 1.25rem .725rem;
 
   h2{
     color: var(--title);

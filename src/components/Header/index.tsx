@@ -2,7 +2,6 @@ import Image from 'next/image'
 import * as FaIcons from 'react-icons/fa'
 import Link from 'next/link'
 import navbar from '../../data/navbar.json'
-
 import { TextField } from '../TextField'
 import { Container, DeliveryInfo, Info, Navbar, Navigation, Profile, Status, Thumbnail } from "./styles"
 
