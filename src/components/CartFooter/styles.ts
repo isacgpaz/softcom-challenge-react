@@ -18,7 +18,7 @@ export const Cart = styled.div`
   color: var(--white);
   border-radius: 5px;
 
-  padding: .75rem;
+  padding: .45rem .75rem;
 
   font-size: 1.15rem;
   font-weight: 700;

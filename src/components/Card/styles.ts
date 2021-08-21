@@ -20,7 +20,7 @@ export const Header = styled.header`
 
   h2{
     overflow: hidden;
-    max-height: 8rem;
+    max-height: 7.5rem;
     text-overflow: ellipsis;
   }
 `
