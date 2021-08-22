@@ -27,9 +27,11 @@ export const Container = styled.div`
     flex: 1;
 
     padding: .5rem;
+    transition: all 0.2s ease;
 
     &:focus{
       outline: none;
+      padding: .5rem .75rem;
     }
   }
 

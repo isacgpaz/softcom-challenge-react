@@ -10,6 +10,7 @@ export const Container = styled.div`
 
 export const ProductsList = styled.div`
   display: flex;
+  justify-items: center;
   gap: 1rem;
 
   overflow: hidden;

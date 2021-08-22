@@ -52,7 +52,7 @@ export function Header(){
       </Profile>
 
       <Navigation>
-        <TextField placeHolder='O que você procura?'>
+        <TextField placeHolder='O que você procura?' doResearch>
           <FaIcons.FaSearch />
         </TextField>
 

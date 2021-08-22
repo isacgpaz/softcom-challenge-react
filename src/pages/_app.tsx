@@ -3,6 +3,7 @@ import { CardProvider } from "../contexts/CardContext";
 import { CartProvider } from "../contexts/CartContext";
 import { ProductModalProvider } from "../contexts/ProductModalContext";
 import { QuantifierProvider } from "../contexts/QuantifierContext";
+import { SearchProvider } from "../contexts/SearchContext";
 import GlobalStyles from "../styles/GlobalStyles";
 
 function MyApp({ Component, pageProps }) {
@@ -11,10 +12,12 @@ function MyApp({ Component, pageProps }) {
       <CartProvider>
         <CardProvider>
           <QuantifierProvider>
-            <ProductModalProvider>
-              <Layout>
-                <Component {...pageProps} />
-              </Layout>
+            <ProductModalProvider>            
+              <SearchProvider>
+                <Layout>
+                  <Component {...pageProps} />
+                </Layout>
+              </SearchProvider>
             </ProductModalProvider>
           </QuantifierProvider>
         </CardProvider>

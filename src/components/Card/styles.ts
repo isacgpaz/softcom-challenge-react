@@ -15,12 +15,15 @@ export const Container = styled.div`
 `
 
 export const Header = styled.header`
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
   max-height: 20rem;
   margin-bottom: 1.5rem;
 
   h2{
     overflow: hidden;
-    max-height: 7.5rem;
+    height: 6rem;
     text-overflow: ellipsis;
   }
 `

@@ -1,14 +1,18 @@
+import { useSearch } from "../../hooks/useSearch";
 import { CartFooter } from "../CartFooter";
+import { Catalog } from "../Catalog";
 import { Header } from "../Header";
 import { Container } from "./styles";
 
 export function Layout({ children }){
+  const { isSearchOpen  } = useSearch()
+
   return (
     <Container>
       <Header />
 
       <main>
-        { children }
+        { isSearchOpen ? <Catalog sectionTitle="Resultado da Busca" products={[]} search /> : children}
       </main>
 
       <CartFooter />
