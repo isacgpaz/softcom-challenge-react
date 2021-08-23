@@ -5,6 +5,7 @@ import navbar from '../../data/navbar.json'
 import { TextField } from '../TextField'
 import { Container, DeliveryInfo, Info, Navbar, Navigation, Profile, Status, Thumbnail } from "./styles"
 import { useRouter } from 'next/dist/client/router'
+import MediaQuery from 'react-responsive'
 
 export function Header(){
   const router = useRouter()
@@ -55,16 +56,18 @@ export function Header(){
       </Profile>
 
       <Navigation>
-        <TextField placeHolder='O que você procura?' doResearch>
-          <FaIcons.FaSearch />
-        </TextField>
+        <MediaQuery maxWidth={756}>
+          <TextField placeHolder='O que você procura?' doResearch>
+            <FaIcons.FaSearch />
+          </TextField>
+        </MediaQuery>
 
         <Navbar>
           <ul>
             <li>
               <Link href='/'>
                 <a className={router.pathname == '/' ? 'active' : undefined}>
-                  <FaIcons.FaHome />
+                  Início
                 </a>
               </Link>
             </li>

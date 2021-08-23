@@ -9,6 +9,8 @@ export const Container = styled.div`
   border: 1.5px solid var(--gray);
   border-radius: 4px;
 
+  
+  background: var(--white);
   color: var(--text-secondary);
 
   transition: all .3s ease;

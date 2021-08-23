@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  background: var(--white);
   border: 1px solid var(--gray);
   border-radius: 5px;
 
@@ -12,6 +13,8 @@ export const Container = styled.div`
 
   width: 13rem;
   height: 22rem;
+
+  cursor: pointer;
 `
 
 export const Header = styled.header`

@@ -80,7 +80,7 @@
       "category": "brinquedos",
       "thumbnail": "https://www.petcaesecia.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/r/brinquedo_jambo_mordedor_pel_cia_macaco_kelev_preto_1786685.jpg",
       "price": 15.90,
-      "sellerSuggestion": false
+      "sellerSuggestion": true
     },
     {
       "id": "6",
@@ -96,7 +96,7 @@
       "category": "brinquedos",
       "thumbnail": "https://www.petlove.com.br/images/products/211039/large/Brinquedo_Chalesco_Bola_Colorida_com_Espinhos_31018604_2.jpg?1627676939",
       "price": 27.99,
-      "sellerSuggestion": false
+      "sellerSuggestion": true
     },
     {
       "id": "7",
@@ -112,7 +112,7 @@
       "category": "brinquedos",
       "thumbnail": "https://staticpetz.stoom.com.br/fotos/1606163316924.jpg",
       "price": 36.99,
-      "sellerSuggestion": false
+      "sellerSuggestion": true
     },
     {
       "id": "8",
@@ -150,6 +150,116 @@
       "category": "coleiras",
       "thumbnail": "https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/c/o/coleira-estampada-dog-bandana-amarela.jpg",
       "price": 14.90,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "11",
+      "title": "Casinha Azul Plástica Dog Home Número 3",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "camas-e-casinhas",
+      "thumbnail": "https://m.media-amazon.com/images/I/61sCGUnJB8L._AC_SX466_.jpg",
+      "price": 130,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "12",
+      "title": "Casa Eco Colors Dog House Evolution Nº2 Vermelho Pet Injet",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "camas-e-casinhas",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIIE283l8wTJNw1IvycmbqHIW3u3kNBp2dqAvIgFrMFW0H34tAQUfQ9gsaA&usqp=CAc",
+      "price": 130,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "13",
+      "title": "Cama Fábrica Pet para Cães - Médio - Azul",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "camas-e-casinhas",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwt6tfjVKysZQXLUwe9JX61aHLxWsvc8eZ7gMW-bqhpUeDLzSZ75DRVtgsQQ&usqp=CAc",
+      "price": 149.89,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "14",
+      "title": "Coleira Peixinho Colors com Guizo",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "coleiras",
+      "thumbnail": "https://www.petlove.com.br/images/products/234410/product/Coleira_Peixinho_Colors_com_Guizo_para_Gatos_2635596.jpg?1627752003",
+      "price": 16.80,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "15",
+      "title": "Coleira Couro Pinos",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "coleiras",
+      "thumbnail": "https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/c/o/coleira-couro-pinos-preto.png",
+      "price": 11.80,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "16",
+      "title": "Petisco para Cães Natural Crisp Strips de Figado - 20g",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "ossos-e-petiscos",
+      "thumbnail": "https://www.royalpets.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/p/e/petisco-para-c-es-natural-crisp-strips-de-figado-20g_1.jpg",
+      "price": 5.80,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "17",
+      "title": "Petisco Pedigree Rodeo para Cães Adultos Sabor Frango",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "ossos-e-petiscos",
+      "thumbnail": "https://images.tcdn.com.br/img/img_prod/685134/petisco_pedigree_rodeo_para_caes_adultos_sabor_frango_70g_689_1_20190924173840.jpg",
+      "price": 5.80,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "18",
+      "title": "Petisco Nestlé Purina DentaLife",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "ossos-e-petiscos",
+      "thumbnail": "https://a-static.mlcdn.com.br/1500x1500/petisco-dentallife-para-caes-adultos-racas-pequenas-frango-42g-purina/petdoginbox/1135/735778a2780e056b11e6a61fe9378807.jpg",
+      "price": 5.80,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "19",
+      "title": "Perfume para Cachorro Colônia para Cães Fêmeas 120ml Sanol",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "saude",
+      "thumbnail": "https://a-static.mlcdn.com.br/574x431/perfume-para-cachorro-colonia-para-caes-femeas-120ml-sanol-dog/agropesc/534305/a43ebf212da2b7801e8517be4fb23d0d.jpg",
+      "price": 25.80,
+      "sellerSuggestion": false
+    },
+    {
+      "id": "20",
+      "title": "Shampoo para Gatos Beep Estopinha",
+      "description": [
+        "Produto de alta qualidade"
+      ],
+      "category": "saude",
+      "thumbnail": "https://a-static.mlcdn.com.br/618x463/shampoo-para-gato-beeps-estopinha-pet-society/petshopcobasi/893919/8b4c09627b9a8e28092b2d21951006f8.jpg",
+      "price": 25.80,
       "sellerSuggestion": false
     }
   ]
