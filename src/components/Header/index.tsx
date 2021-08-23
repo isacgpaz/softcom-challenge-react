@@ -61,11 +61,21 @@ export function Header(){
 
         <Navbar>
           <ul>
+            <li>
+              <Link href='/'>
+                <a className={router.pathname == '/' ? 'active' : undefined}>
+                  <FaIcons.FaHome />
+                </a>
+              </Link>
+            </li>
+
             {navbar.map((item, index) => {
               return (
                 <li key={index}>
                   <Link href={item.path}>
-                    <a className={router.pathname == item.path && 'active'}>{item.title}</a>
+                    <a className={(`/${router.query.slug}` == item.path || router.pathname == item.path) ? 'active' : undefined}>
+                      {item.title}
+                    </a>
                   </Link>
                 </li>
               )

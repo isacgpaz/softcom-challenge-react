@@ -7,7 +7,8 @@ module.exports = {
       'www.petlove.com.br', 
       'www.petcaesecia.com.br',
       'staticpetz.stoom.com.br',
-      'cobasi.vteximg.com.br'
+      'cobasi.vteximg.com.br',
+      'm.media-amazon.com'
     ]
   }
 }

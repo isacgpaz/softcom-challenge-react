@@ -1,11 +1,14 @@
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
+import { useEffect } from 'react'
 import { Catalog } from '../components/Catalog'
+import { useSearch } from '../hooks/useSearch'
 import { IHome } from '../interfaces/IHome'
 import { IProduct } from '../interfaces/IProduct'
 import { api } from '../services/api'
 
 export default function Home({ 
+  products,
   sellerSuggestion, 
   toys, 
   bedsAndHouses, 
@@ -13,6 +16,12 @@ export default function Home({
   bonesAndSnacks, 
   health 
   }: IHome) {
+  const { getProducts } = useSearch()
+
+  useEffect(() => {
+    getProducts(products)
+  }, [getProducts, products])
+
   return (
     <div>
       <Head>
@@ -57,6 +66,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
+      products,
       sellerSuggestion,
       toys,
       bedsAndHouses,

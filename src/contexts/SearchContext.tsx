@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useState } from "react";
+import { IProduct } from "../interfaces/IProduct";
 
 interface SearchProviderProps{
   children: ReactNode
@@ -9,13 +10,17 @@ interface SearchContextData{
   toggleSearch: () => void
   openSearch: () => void
   closeSearch: () => void
-  getProductByName: (query: string) => void
+  getProductByName: (query: string) => void,
+  getProducts: (products: Array<IProduct>) => void,
+  resultSearch: Array<IProduct>
 }
 
 export const SearchContext = createContext({} as SearchContextData);
 
 export function SearchProvider({ children }: SearchProviderProps){
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [products, setProducts] = useState<Array<IProduct> | null>([])
+  const [resultSearch, setResultSearch] = useState<Array<IProduct> | null>([])
 
   function toggleSearch(){
     setIsSearchOpen(!isSearchOpen)
@@ -29,8 +34,13 @@ export function SearchProvider({ children }: SearchProviderProps){
     setIsSearchOpen(false)
   }
 
-  function getProductByName(query: string){
-    
+  function getProducts(products: Array<IProduct>){
+    setProducts(products)
+  }
+
+  function getProductByName(query: string){    
+    const result = products.filter((product: IProduct) => { return product.title.toLowerCase().includes(query.toLowerCase()) });
+    setResultSearch(result)
   }
 
   return (
@@ -39,7 +49,9 @@ export function SearchProvider({ children }: SearchProviderProps){
       closeSearch,
       isSearchOpen,
       toggleSearch,
-      getProductByName  
+      getProductByName,
+      getProducts,
+      resultSearch
     }}>
       { children }
     </SearchContext.Provider>

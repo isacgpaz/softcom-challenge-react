@@ -9,7 +9,7 @@ export const Container = styled.header`
 export const Profile = styled.div`
   display: flex;
   align-items: center;
-  gap: .4rem;
+  gap: .75rem;
   padding: 1rem .725rem;
   border-bottom: 4px solid var(--purple);
 `
@@ -116,6 +116,7 @@ export const Navbar = styled.nav`
       a{
         display: flex;
         align-items: center;
+        gap: .35rem;
         white-space: nowrap;
         font-weight: 700;
 
