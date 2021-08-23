@@ -8,6 +8,7 @@ import { Container, SearchField } from "./styles";
 import MediaQuery from 'react-responsive';
 import { useProductModal } from "../../hooks/useProductModal";
 import { ProductModal } from "../ProductModal";
+import { Footer } from "../Footer";
 
 export function Layout({ children }){
   const { isSearchOpen, resultSearch } = useSearch()
@@ -52,6 +53,10 @@ export function Layout({ children }){
       </main>
 
       <CartFooter />
+      
+      <MediaQuery minWidth={1000}>
+        <Footer />
+      </MediaQuery>
     </Container>
   )
 }
