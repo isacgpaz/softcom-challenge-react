@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   
   width: 100%;
-  border: 2px solid var(--gray);
+  border: 1.5px solid var(--gray);
   border-radius: 4px;
 
   color: var(--text-secondary);
@@ -14,7 +14,7 @@ export const Container = styled.div`
   transition: all .3s ease;
   
   &:focus-within{
-    border: 2px solid var(--purple);
+    border: 1.5px solid var(--purple);
     
     span{
       font-size: 1.35rem;
@@ -32,6 +32,10 @@ export const Container = styled.div`
     &:focus{
       outline: none;
       padding: .5rem .75rem;
+
+      &~span{
+        color: var(--purple);
+      }
     }
   }
 

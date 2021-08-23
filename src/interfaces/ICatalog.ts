@@ -4,4 +4,5 @@ export interface ICatalog{
   sectionTitle: string
   products: Array<IProduct>
   search?: boolean
+  grid?: boolean
 }

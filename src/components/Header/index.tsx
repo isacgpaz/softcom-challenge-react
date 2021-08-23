@@ -4,8 +4,11 @@ import Link from 'next/link'
 import navbar from '../../data/navbar.json'
 import { TextField } from '../TextField'
 import { Container, DeliveryInfo, Info, Navbar, Navigation, Profile, Status, Thumbnail } from "./styles"
+import { useRouter } from 'next/dist/client/router'
 
 export function Header(){
+  const router = useRouter()
+
   return (
     <Container>
       <Profile>
@@ -62,7 +65,7 @@ export function Header(){
               return (
                 <li key={index}>
                   <Link href={item.path}>
-                    <a>{item.title}</a>
+                    <a className={router.pathname == item.path && 'active'}>{item.title}</a>
                   </Link>
                 </li>
               )

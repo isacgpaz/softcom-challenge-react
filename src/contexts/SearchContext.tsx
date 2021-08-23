@@ -30,7 +30,7 @@ export function SearchProvider({ children }: SearchProviderProps){
   }
 
   function getProductByName(query: string){
-    console.log(query)
+    
   }
 
   return (

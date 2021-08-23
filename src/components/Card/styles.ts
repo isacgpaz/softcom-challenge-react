@@ -10,21 +10,19 @@ export const Container = styled.div`
 
   padding: .75rem;
 
-  width: 14rem;
-  height: 25rem;
+  width: 13rem;
+  height: 22rem;
 `
 
 export const Header = styled.header`
   display: flex;
   flex-direction: column;
   gap: .35rem;
-  max-height: 20rem;
-  margin-bottom: 1.5rem;
 
   h2{
     overflow: hidden;
-    height: 6rem;
     text-overflow: ellipsis;
+    font-size: 1.1rem;
   }
 `
 

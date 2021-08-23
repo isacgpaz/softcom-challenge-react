@@ -7,7 +7,7 @@ export function Catalog(props: ICatalog){
     <Container>
       <h2>{props.sectionTitle}</h2>
 
-      <ProductsList>
+      <ProductsList grid={props.grid}>
         {props.products.length != 0 ? (
           props.products.map(product => {
             return (
@@ -17,7 +17,11 @@ export function Catalog(props: ICatalog){
             )
           })
         ) : (
-          <p>Não há itens disponíveis</p>
+          props.search ? (
+            <p>Não foram encontrados itens.</p>
+          ) : (
+            <p>Não há itens disponíveis</p>
+          )
         )}
       </ProductsList>
     </Container>
