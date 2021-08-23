@@ -33,7 +33,6 @@ export const Container = styled.div`
 
     &:focus{
       outline: none;
-      padding: .5rem .75rem;
 
       &~span{
         color: var(--purple);

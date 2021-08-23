@@ -12,16 +12,17 @@ function MyApp({ Component, pageProps }) {
       <CartProvider>
         <CardProvider>
           <QuantifierProvider>
-            <ProductModalProvider>            
-              <SearchProvider>
+            <SearchProvider>
+              <ProductModalProvider>            
                 <Layout>
                   <Component {...pageProps} />
                 </Layout>
-              </SearchProvider>
-            </ProductModalProvider>
+              </ProductModalProvider>
+            </SearchProvider>
           </QuantifierProvider>
         </CardProvider>
       </CartProvider>
+
       <GlobalStyles />
     </>
   )

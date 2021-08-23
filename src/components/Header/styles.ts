@@ -9,14 +9,21 @@ export const Container = styled.header`
 export const Profile = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: .75rem;
   padding: 1rem .725rem;
   border-bottom: 4px solid var(--purple);
 
   @media(min-width: 540px) {
     padding: 1.5rem 4rem;
-    gap: 2rem;
+    gap: 1.25rem;
   }
+`
+
+export const Presentation = styled.div`
+  display: flex;
+  align-items: center;
+  gap: .85rem;
 `
 
 export const Thumbnail = styled.div`
@@ -60,6 +67,34 @@ export const Status = styled.div`
     font-weight: 700;
     font-size: .785rem;
     color: var(--green);
+  }
+
+  @media(min-width: 760px) {
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+`
+
+export const Cart = styled.div`
+  display: flex;
+  align-items: center;
+
+  border-left: 2px solid var(--gray-light);
+  padding: 2rem 0 2rem 1rem;
+
+  font-weight: 700;
+
+  div{
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+    }
+    
+    span{
+      color: var(--purple);
+    }
   }
 `
 

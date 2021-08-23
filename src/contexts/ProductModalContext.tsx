@@ -9,6 +9,7 @@ interface ProductModalProviderProps{
 interface ProductModalContextData{
   isModalOpen: boolean;
   toggleModal: (product?: IProduct) => void;
+  product: IProduct;
 }
 
 export const ProductModalContext = createContext({} as ProductModalContextData);
@@ -28,9 +29,10 @@ export function ProductModalProvider({ children }: ProductModalProviderProps){
   return (
     <ProductModalContext.Provider value={{
       isModalOpen,
-      toggleModal
+      toggleModal,
+      product
     }}>
-      { isModalOpen ? <ProductModal {...product} /> : children }
+      { children }
     </ProductModalContext.Provider>
   )
 }

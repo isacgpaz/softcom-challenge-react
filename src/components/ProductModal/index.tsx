@@ -1,20 +1,26 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import * as MdIcons from 'react-icons/md'
+import * as FaIcons from 'react-icons/fa'
+import MediaQuery from 'react-responsive'
 import { useCard } from '../../hooks/useCard'
 import { useProductModal } from '../../hooks/useProductModal'
 import { IProduct } from '../../interfaces/IProduct'
-import { OnSale } from '../Card/styles'
+import { OnSale, Thumbnail } from '../Card/styles'
 import { Quantifier } from '../Quantifier'
 import { TextField } from '../TextField'
-import { Container, Header, Observation, ProductInfo, Thumbnail } from "./styles"
+import { ButtonCloseModal, Container, Header, Observation, ProductBody, ProductInfo } from "./styles"
 
-export function ProductModal(props: IProduct){
+interface ProductModalProps{
+  product?: IProduct;
+}
+
+export function ProductModal(props: ProductModalProps){
   const { calcDiscount } = useCard();
   
   const [discount, setDiscount] = useState(0);
 
-  const product = props;
+  const product = props.product;
 
   useEffect(() => {
     if(product.onSale){
@@ -28,16 +34,24 @@ export function ProductModal(props: IProduct){
 
   return (
     <Container>
-       <Header>
-        <button type="button" onClick={() => { toggleModal()}}>
-          <span>
-            <MdIcons.MdKeyboardArrowLeft />
-          </span>
-          Voltar
-        </button>
-       </Header>
+      <MediaQuery maxWidth={760}>
+        <Header>
+          <button type="button" onClick={() => { toggleModal()}}>
+            <span>
+              <MdIcons.MdKeyboardArrowLeft />
+            </span>
+            Voltar
+          </button>
+        </Header>
+      </MediaQuery>
 
-       <ProductInfo>
+      <ProductInfo>
+        <MediaQuery minWidth={760}>
+          <ButtonCloseModal type="button" onClick={() => { toggleModal()}}>
+            <FaIcons.FaTimes />
+          </ButtonCloseModal>
+        </MediaQuery>
+
         <Thumbnail>
           {product.onSale && <OnSale>{discount}% OFF</OnSale>}
           <Image
@@ -48,27 +62,31 @@ export function ProductModal(props: IProduct){
           /> 
         </Thumbnail>
 
-        <h2>{product.title}</h2>
-
-        <ul>
-          {product.description.map((item, index) => {
-            return (
-              <li key={index}>- {item}</li>
-            )
-          })}
-        </ul>
-       </ProductInfo>
-
-       <Observation>
+        <ProductBody>
           <div>
-            <p>Observações:</p>
-            <span>0/500</span>
+            <h2>{product.title}</h2>
+
+            <ul>
+              {product.description.map((description, index) => {
+                return (
+                  <li key={index}>- {description}</li>
+                )
+              })}
+            </ul>
           </div>
 
-          <TextField />
-       </Observation>
+          <Observation>
+            <div>
+              <p>Observações:</p>
+              <small>0/500</small>
+            </div>
 
-       <Quantifier price={product.price}/>
+            <TextField />
+          </Observation>
+          
+          <Quantifier price={product.price}/>
+        </ProductBody>
+      </ProductInfo>
     </Container>
   )
 }

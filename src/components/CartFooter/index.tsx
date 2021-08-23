@@ -8,7 +8,7 @@ export function CartFooter(){
 
   return (
     <Container>
-      <MediaQuery maxWidth={760}>
+      <MediaQuery maxWidth={1000}>
         <Cart>
           <button type="button">
             <FaIcons.FaShoppingCart />

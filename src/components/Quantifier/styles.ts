@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: .75rem;
 
   div{
     &:first-child {
@@ -47,4 +46,8 @@ export const Cart = styled.button`
   color: var(--white);
   border: none;
   border-radius: 4px;
+
+  @media(min-width: 760px) {
+    width: 60%;
+  }
 `
