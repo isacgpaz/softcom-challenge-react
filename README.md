@@ -6,21 +6,12 @@ pela Softcom Tecnologia.</p>
 
 ### 📸 ScreenShots da Aplicação
 #### 📱 Dispositivos Móveis 
-<<<<<<< HEAD
 <img src="/public/screenshots/home-mobile.png" alt="Página inicial - Mobile"/>
 <img src="/public/screenshots/product-mobile.png" alt="Produto - Mobile"/>
 
 #### 🖥 Desktop
 <img src="/public/screenshots/home-desktop.png" alt="Página inicial - Desktop"/>
 <img src="/public/screenshots/product-desktop.png" alt="Produto - Desktop"/>
-=======
-<img src="/screenshots/home-mobile.png" alt="Página inicial - Mobile"/>
-<img src="/screenshots/product-mobile.png" alt="Produto - Mobile"/>
-
-#### 🖥 Desktop
-<img src="/screenshots/home-desktop.png" alt="Página inicial - Desktop"/>
-<img src="/screenshots/product-desktop.png" alt="Produto - Desktop"/>
->>>>>>> 3ab2050b110e4a07ac248458cc9a96e0228a1b73
 
 ### 🏃🏻‍♂️ Como executar o Projeto
 
