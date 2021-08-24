@@ -65,7 +65,6 @@ export const ProductInfo = styled.div`
 
   background: var(--white);
   border-radius: 4px;
-  padding: 2rem;
 
   transition: all .2s ease;
 
