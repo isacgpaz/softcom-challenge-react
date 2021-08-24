@@ -73,6 +73,7 @@ export const ProductInfo = styled.div`
     flex-direction: row;
     margin: auto;
     width: 55%;
+    padding: 2rem;
 
     img{
       width: 20rem;
