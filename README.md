@@ -130,10 +130,17 @@ Agradeço à [SoftCom Tecnologia](https://github.com/softcomtecnologia) por disp
 
 ***
 
+### 🔗 Links
+
+✔ [Protótipo do Desafio no Figma](https://www.figma.com/file/ebcFb6dxwj4JkN7vENzgeQ/%5BSoftcom%5D-Desafio-UX?node-id=58%3A2096)
+✔ [Descritivo](https://github.com/softcomtecnologia/challenge/tree/master/front-end)
+
+***
+
 ### Autor
 👨‍💻 Isac Gomes da Paz Marinho | Desenvolvedor Web
 
-✉ [ Meu Email](mailto:isacgomesp@gmail.com)
+✉ [Meu Email](mailto:isacgomesp@gmail.com)
 
 🌍 [LinkedIn](https://www.linkedin.com/in/isacgpaz/)
 
